@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="style/stylee.css">
+    <link rel="stylesheet" href="style/styleform.css">
+</head>
+<body> 
+    <header class="header">
+        <h1>Emprega Dianópolis</h1>
+    
+        <div class="hanburger">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <nav>
+            <ul>
+            <li><a href="home.html">INICIO</a></li>
+            <li><a href="Empregadores.html">EMPREGADORES</a></li>
+            <li><a href="Profissionais.html">PROFISSIONAIS</a></li>
+            <li><a href="cadastrar.html">CADASTRAR</a></li>
+         </ul>
+    
+        </nav>          
+    </header>
+    <main>
+        <h2>Nesta seção você pode cadastrar tanto uma vaga de emprego como um curriculo.</h2>
+        <form class="meu_form">
+
+            <h2>Cadastrar currículo</h2>
+          
+            <input type="text" id="nomeid" placeholder="Fulano da Silva" required="required" name="nome" />
+            <label for="nome">Nome</label>
+          
+            <input type="tel" id="foneid" placeholder="(xx)xxxx-xxxx" name="fone" />
+            <label for="fone">Fone</label>
+          
+            <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+            <label for="email">Email</label>
+          
+            <textarea placeholder="Descreva aqui suas qualificações e experiências profissionais"></textarea>
+          
+            <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+          </form>
+          <br>
+          <form class="meu_form">
+
+            <h2>Cadastrar Vaga de Emprego</h2>
+          
+            <input type="text" id="nomeid" placeholder="Supermercado DNO" required="required" name="nome" />
+            <label for="nome">Empregador</label>
+          
+            <input type="tel" id="foneid" placeholder="(xx)xxxx-xxxx" name="fone" />
+            <label for="fone">Fone</label>
+          
+            <input type="text" id="emailid" placeholder="Cargo" name="nome" />
+            <label for="nome">Vaga Ofertada</label>
+          
+            <textarea placeholder="Descreva aqui os requisitos exigidos para a vaga."></textarea>
+          
+            <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+          </form>
+          <div class="constrution">
+            <img src="imagens/construcao.svg" alt="Trabalhadores construindo" width="200px">
+                <p>Site em Construção<br> em breve novidades</p>
+        </div>
+       
+    </main>
+   
+    <footer class="footer">
+        © 2021 Curriculos Dianópolis<br>Por: Wesllen Urcino <br> 
+    </footer>
+
+    <script src="javascript.js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
