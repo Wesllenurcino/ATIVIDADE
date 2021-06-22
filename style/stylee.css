@@ -239,4 +239,25 @@ body main{
      padding: 40px;
  }
 
- 
+.imagemprofile{
+ border-radius: 100px;
+
+}
+
+.busca {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color:#C3FDE4;
+    margin: auto;
+    margin-top: 10px;
+    max-width: 600px;
+    border-radius: 5px; 
+    box-shadow: 2px 2px 2px black;
+    
+}
+
+li {
+    list-style-type: none;
+  }

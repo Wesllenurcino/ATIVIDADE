@@ -17,10 +17,11 @@
         </div>
         <nav>
             <ul>
-            <li><a href="home.html">INICIO</a></li>
+            <li><a href="index.html">INICIO</a></li>
             <li><a href="Empregadores.html">EMPREGADORES</a></li>
             <li><a href="Profissionais.html">PROFISSIONAIS</a></li>
             <li><a href="cadastrar.html">CADASTRAR</a></li>
+            <li><a href="busca.html">BUSCAR</a></li>
          </ul>
     
         </nav>          
@@ -30,37 +31,57 @@
         <form class="meu_form">
 
             <h2>Cadastrar currículo</h2>
-          
-            <input type="text" id="nomeid" placeholder="Fulano da Silva" required="required" name="nome" />
+
+        <div>
             <label for="nome">Nome</label>
-          
-            <input type="tel" id="foneid" placeholder="(xx)xxxx-xxxx" name="fone" />
+            <input type="text" id="nomeid" placeholder="Fulano da Silva" required="required" name="nome" />
+            
+        </div>
+        <div>  
             <label for="fone">Fone</label>
-          
-            <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+            <input type="tel" id="foneid" placeholder="(xx)xxxx-xxxx" name="fone" />
+            
+        </div>
+        <div>
             <label for="email">Email</label>
-          
-            <textarea placeholder="Descreva aqui suas qualificações e experiências profissionais"></textarea>
-          
+            <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+            
+        </div>  
+        <div>
+            <label for="resumo2">Resumo das experiências</label>
+            <textarea id="resumo2" placeholder="Descreva aqui suas qualificações e experiências profissionais"></textarea> 
+            <p><span id="contador2">N2</span>Caracteres Restantes</p>         
             <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
-          </form>
+        </div>       
+            
+        </form>
           <br>
           <form class="meu_form">
 
             <h2>Cadastrar Vaga de Emprego</h2>
-          
-            <input type="text" id="nomeid" placeholder="Supermercado DNO" required="required" name="nome" />
-            <label for="nome">Empregador</label>
-          
-            <input type="tel" id="foneid" placeholder="(xx)xxxx-xxxx" name="fone" />
-            <label for="fone">Fone</label>
-          
-            <input type="text" id="emailid" placeholder="Cargo" name="nome" />
-            <label for="nome">Vaga Ofertada</label>
-          
-            <textarea placeholder="Descreva aqui os requisitos exigidos para a vaga."></textarea>
-          
-            <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+            <div>
+                <label for="nome">Empregador</label>
+                <input type="text" id="nomeid" placeholder="Supermercado DNO" required="required" name="nome" />
+            </div>
+            
+            <div>
+                <label for="fone">Telefone</label>
+                <input type="tel" id="foneid" placeholder="(xx)xxxx-xxxx" name="fone" />
+            </div>
+
+            <div>
+                <label for="nome">Vaga Ofertada</label>
+                <input type="text" id="emailid" placeholder="Cargo" name="nome" />
+            </div>
+            
+            <div>
+                <label for="resumo">Requisitos da Vaga</label>
+                <textarea id="resumo" placeholder="Descreva aqui os requisitos exigidos para a vaga." rows="25" maxlength="499"></textarea>
+                <p><span id="contador">N</span>Caracteres Restantes</p>
+                <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+            </div>
+
+            
           </form>
           <div class="constrution">
             <img src="imagens/construcao.svg" alt="Trabalhadores construindo" width="200px">
@@ -72,7 +93,7 @@
     <footer class="footer">
         © 2021 Curriculos Dianópolis<br>Por: Wesllen Urcino <br> 
     </footer>
-
+    <script src="javascript.js/contadorcaracteres.js"></script>
     <script src="javascript.js/script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>

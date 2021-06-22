@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;500;700&display=swap');
-.meu_form {
+
+/*.meu_form {
     padding: 20px;
     margin: 0px auto;
     top: 0 auto;
@@ -10,9 +11,9 @@
 .meu_form {
     font-family: 'segnika';
     font-size: 15px;
-    background-color: #C3FDE4;
+    background-color: #78fdc4;
     max-width: 500px;
-}
+}*/
 
 .meu_form h2 {
     margin-bottom: 20px;
@@ -26,15 +27,16 @@ input, textarea {
     width: 200px;
     padding: 10px;
     color: black;
-    margin-left: 20px;
+    margin: auto;
+    margin-left: 15px;
     margin-top: 10px;
     border: 1px solid;
+    border-radius: 5px;
 }
 
 .meu_form input:hover, textarea:hover, input:focus, textarea:focus {
-    border-color: #000066;
-    
-    background-color: #ada3ff;
+    border-color: #000066;    
+    background-color: #c7c0fa;
     color: black;
     font-weight: bold;
 }
@@ -66,3 +68,17 @@ form label {
     font-weight: bold;
 }
 
+form div {
+    
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color:#C3FDE4;
+        margin: auto;
+        margin-top: 10px;
+        max-width: 600px;
+        border-radius: 5px; 
+        box-shadow: 2px 2px 2px black;
+    
+      
+}
